@@ -1,6 +1,6 @@
 # FunctionalProgrammingWithJS
 
-##S In this repository I add code snippets for different concepts in FP
+## In this repository I add code snippets for different concepts in FP
 ## Each file contains different examples for each concenpts
 ## Concepts like:
 ### Avoid share state
