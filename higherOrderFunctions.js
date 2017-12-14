@@ -7,7 +7,8 @@ function goalMaker(name) {
 }
  
 var myGoal = goalMaker('Farzaneh');
-console.log(myGoal('SoCal presentation')); // Farzaneh you need to get ready for SoCal presentation
+console.log(myGoal(' Function programming paradigms presentation')); 
+// Farzaneh you need to get ready for Function programming paradigms presentation
  
 //beauty of map(higher order function) will work on any data type-no matter what I pass it will excute the desired task
 function addTwoFunction(input) {
