@@ -59,7 +59,6 @@ var total = values.reduce(function(sum, item) {
 console.log(total); //23
 
 
-
 var animals = [{
         name: 'fluffy',
         type: 'Dog',
@@ -95,4 +94,49 @@ function dog(animal) {
 }
 var dog = animals.filter(dog);
 
-console.log(dog);
+// console.log(dog);
+(function () {
+    'use strict'
+    
+    class Animals{
+    
+        constructor(){
+            this._myAnimals=[
+                {
+                name: 'fluffy',
+                type: 'Dog',
+                age: '2'
+            },
+            {
+                name: 'pumpkin',
+                type: 'Cat',
+                age: '4'
+            },
+            {
+                name: 'muffin',
+                type: 'Dog',
+                age: '8'
+            }
+        ];
+        }
+    
+        filterToDogs(){
+            for (let index = 0; index < this._myAnimals.length; index++) {
+                if(this._myAnimals[index].type !== "Dog"){
+                    this._myAnimals.splice(index,1);
+                }
+                
+            }
+            return this._myAnimals;
+    
+        }
+        
+        
+    
+    }
+
+    var animals = new Animals();
+    console.log(animals.filterToDogs());
+   
+})();
+
